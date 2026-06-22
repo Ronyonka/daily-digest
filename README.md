@@ -1,32 +1,30 @@
 # Lawyer Daily Digest
 
-A Next.js proof of concept for a law-firm daily digest. The app shows a hosted
-dashboard with mocked calendar, email, Harvest, and client/matter data, all
-loaded through a shared server-side aggregator. It also includes a Slack digest
-route that formats the same snapshot into Block Kit and posts it to a webhook.
+A Next.js proof of concept for a law-firm daily digest. It combines mocked
+calendar, email, Harvest, and client/matter data into a hosted dashboard and a
+Slack digest delivered through the same server-side aggregation pipeline.
 
 Live demo: https://daily-digest-tan.vercel.app
 
-## What this project demonstrates
+## What this proves
 
-- A single dashboard view that combines four data sources into one snapshot
-- Shared aggregation logic used by the dashboard and the Slack digest route
-- A Slack-ready `/api/digest` route for manual runs and Vercel Cron
-- Real Vercel hosting for the web app
-- Mocked data stored in static JSON fixtures under `data/`
+- One shared snapshot can power both a dashboard and a Slack summary
+- Mocked legal-work data can still feel like a believable morning brief
+- The dashboard is shareable as a hosted link
+- Slack delivery can be triggered manually or by Vercel Cron
 
-## What is real vs mocked
+## Real vs mocked
 
 Real:
 
-- Next.js App Router application
+- Next.js App Router app
 - Tailwind styling
 - Server-side JSON loading and Zod validation
 - Shared aggregation logic in `lib/aggregator.ts`
 - Slack Block Kit formatting in `lib/slack-formatter.ts`
 - Slack webhook posting in `lib/slack-client.ts`
-- The `/api/digest` route that ties the digest pipeline together
-- Deployed dashboard on Vercel
+- `/api/digest` for manual runs or cron-triggered runs
+- Vercel hosting and cron configuration
 
 Mocked:
 
@@ -34,13 +32,12 @@ Mocked:
 - Email data
 - Harvest data
 - Client / matter status data
-- Any notion of live integrations with Microsoft Graph, Harvest, or practice
-  management software
+- Any live Microsoft Graph, Harvest, or practice-management integration
 
-Important: there is no real authentication, no database, and no third-party API
-integration behind the dashboard data. The client/matter section is intentionally
-invented to represent the kind of legal-work status tracking a real version
-could support.
+Important honesty note: there is no auth, no database, and no real third-party
+account access behind the dashboard data. The client/matter section is
+intentionally invented to represent the kind of legal-work status tracking a
+real version could support, but it does not map to any specific real product.
 
 ## Repo structure
 
@@ -52,12 +49,13 @@ lib/
 ```
 
 - `app/page.tsx` renders the dashboard
-- `components/` contains the four cards
+- `app/api/digest/route.ts` formats and sends the Slack digest
+- `components/` contains the dashboard cards and shared UI helpers
 - `data/` contains the mock JSON fixtures
 - `lib/schemas.ts` defines the Zod schemas
 - `lib/aggregator.ts` loads and validates the data server-side
 
-## Running locally
+## Run locally
 
 ```bash
 npm install
@@ -74,32 +72,25 @@ Create a local `.env.local` file for the Slack webhook secret:
 SLACK_WEBHOOK_URL=
 ```
 
-`.env.local` is ignored by git. The Slack workspace and incoming webhook itself
-are a manual one-time setup step that still needs to be completed before the
-digest route can post successfully.
+`.env.local` is ignored by git. The Slack workspace and incoming webhook are
+manual setup steps.
 
 ## Current status
 
-Day 1 of the proof of concept is complete, and the Slack digest pipeline is in
-place:
+This proof of concept is complete:
 
-- Mock JSON fixtures exist for all four sections
-- Zod schemas validate the data
-- The dashboard cards are wired to the shared aggregator
-- The dashboard is deployed to Vercel and renders real mock data
-- The Slack formatter, webhook client, and `/api/digest` route are built
-
-Remaining Day 2 work:
-
-- Manually create the Slack workspace and incoming webhook
-- Add `SLACK_WEBHOOK_URL` to the deployed Vercel project
-- Add `vercel.json` cron config
-- Test the digest route against the real webhook
-- Polish any remaining UI rough edges
+- The dashboard renders all four mocked sections
+- The shared aggregator powers both the UI and the Slack digest route
+- The Slack digest can be triggered manually and via cron
+- The dashboard is deployed to Vercel
+- The repo has loading and empty states, plus a consistent shared card shell
 
 ## Notes
 
-- There is no real client data source behind the matter/status section.
-- The dashboard is intended to be forwardable as a demo, not a production app.
-- Slack delivery is wired in code, but the webhook must still be created and
-  configured manually.
+- The dashboard is meant to be forwardable as a demo, not treated as a live
+  production app.
+- The client/matter section is the most speculative part of the concept and is
+  clearly mocked here on purpose.
+- If you want to adapt this into a real product, the next step would be wiring
+  the mocked sources to actual systems and redoing the honesty copy for those
+  integrations.

@@ -24,7 +24,9 @@ export function SendTestDigestButton() {
         | { ok: false; error?: string };
 
       if (!response.ok || !payload.ok) {
-        throw new Error(payload.ok ? "Digest request failed." : payload.error ?? "Digest request failed.");
+        throw new Error(
+          payload.ok ? "Digest request failed." : payload.error ?? "Digest request failed."
+        );
       }
 
       setFeedback({
@@ -35,7 +37,9 @@ export function SendTestDigestButton() {
       setFeedback({
         kind: "error",
         message:
-          error instanceof Error ? error.message : "Something went wrong sending the test digest.",
+          error instanceof Error
+            ? error.message
+            : "Something went wrong sending the test digest.",
       });
     }
   }

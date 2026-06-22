@@ -17,7 +17,8 @@ function formatDashboardDate(date: Date) {
 
 export default function Home() {
   const digest = getDigestData();
-  const dayLabel = formatDashboardDate(new Date(digest.calendar[0].startTime));
+  const referenceStart = digest.calendar[0]?.startTime ?? new Date().toISOString();
+  const dayLabel = formatDashboardDate(new Date(referenceStart));
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#f8fafc_0%,#eef2ff_46%,#f8fafc_100%)] px-6 py-10 text-slate-900 sm:px-8 lg:px-12">

@@ -52,6 +52,11 @@ anything else.**
 - [x] Added the real `SLACK_WEBHOOK_URL` to local `.env.local` and Vercel
 - [x] Tested `/api/digest` locally against the real Slack webhook and confirmed
       Slack accepted the formatted Block Kit payload
+- [x] Polished the dashboard with shared card chrome, explicit empty states, and
+      a route loading skeleton
+- [x] Rewrote `README.md` to clearly separate real vs mocked pieces and call out
+      the invented client/matter section
+- [x] Ran final verification with `npm run lint` and `npm run build`
 
 ### In Progress
 
@@ -59,9 +64,7 @@ anything else.**
 
 ### Next
 
-- [ ] Polish: loading states, empty states, consistent spacing/header styling
-- [ ] Final review pass: read through all generated code, fix anything sloppy,
-      remove leftover TODOs/console.logs
+- [x] None. Day 2 work is complete.
 
 ### Questions/Flags
 
@@ -85,6 +88,7 @@ anything else.**
       for demo polish
 - [x] Added a demo-only `Send test digest` button on the dashboard that calls
       `/api/digest` client-side and surfaces success/error feedback
+- [x] Final polish and README pass completed
 
 ### In Progress
 
@@ -92,7 +96,7 @@ anything else.**
 
 ### Next
 
-- [ ] Final polish/README pass
+- [x] None. Project complete.
 
 ### Questions/Flags
 
@@ -104,3 +108,5 @@ anything else.**
 - Verified the Slack formatter, webhook client, and `/api/digest` route with
   `npm run lint` and `npm run build`.
 - Dashboard is live on Vercel at `https://daily-digest-tan.vercel.app`
+- Project is complete; no further build work is planned unless Mark requests
+  changes.
