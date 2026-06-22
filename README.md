@@ -41,6 +41,10 @@ Important honesty note: there is no auth, no database, and no real third-party
 account access behind the dashboard data. The client/matter section is
 intentionally invented to represent the kind of legal-work status tracking a
 real version could support, but it does not map to any specific real product.
+It was built speculatively before confirming whether the firm has a dedicated
+client/matter-tracking system or whether this information lives inside Harvest's
+client records, so a real version would need that clarified before treating it
+as a true data source.
 
 ## Repo structure
 
@@ -89,6 +93,15 @@ This proof of concept is complete:
 - The dashboard is deployed to Vercel
 - The repo has loading and empty states, plus a consistent shared card shell
 
+## Future Direction
+
+This build intentionally stops at a single morning digest. A fuller version would
+move from one cron-triggered snapshot to an event-driven or polling model that
+can push incremental updates as they happen, such as a newly urgent email or a
+meeting ending with action items from Fathom. Architecturally, that would mean
+adding a continuous ingestion layer and an update dispatcher instead of relying
+only on a once-a-day batch run.
+
 ## Notes
 
 - The dashboard is meant to be forwardable as a demo, not treated as a live
@@ -97,6 +110,9 @@ This proof of concept is complete:
   morning handoff from yesterday's meetings.
 - The client/matter section is the most speculative part of the concept and is
   clearly mocked here on purpose.
+- The firm already runs an internal AI inference platform, so any real
+  AI-generated content in a future version of this digest would likely route
+  through that existing platform instead of introducing a separate one.
 - If you want to adapt this into a real product, the next step would be wiring
   the mocked sources to actual systems and redoing the honesty copy for those
   integrations.

@@ -114,6 +114,9 @@ anything else.**
 - [x] Repositioned the Fathom card to the bottom of the dashboard and kept its internal layout as one vertical block
 - [x] Made the Fathom card span the full width below the two-column grid of the other cards
 - [x] Tightened the Fathom Slack block text to fit Slack's section limits and verified `/api/digest` posts successfully with the Fathom section included
+- [x] Reframed the Matters section honestly in the README, including the speculation around whether the firm uses a dedicated client/matter system or stores that data in Harvest
+- [x] Added a README note that any future AI-generated digest content would likely route through the firm's existing internal AI inference platform
+- [x] Added a brief README "Future Direction" note describing the gap between the current single morning digest and a later event-driven or polling-based update model
 
 ### In Progress
 
@@ -121,13 +124,13 @@ anything else.**
 
 ### Next (do these in order)
 
-- [ ] Reframe/caveat the Matters section honestly in the README
-- [ ] Note the "single morning digest vs throughout-the-day updates" gap as a known limitation to be addressed in a later phase, not silently ignored
+- [x] None. Day 3 work is complete.
 
 ### Questions/Flags
 
 - The follow-up stakeholder context makes it clear that Fathom should be represented explicitly and that the existing Client/Matter section should be described carefully as speculative unless a real upstream system is confirmed.
-- Fathom now shows up in both the dashboard and the Slack digest; the remaining Day 3 follow-up work is still the README honesty pass.
+- Fathom now shows up in both the dashboard and the Slack digest, and the Day 3 README follow-up is complete.
+- Day 3 is now complete.
 
 ## Notes for next session (free-form, update this each time)
 
