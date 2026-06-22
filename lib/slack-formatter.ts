@@ -57,6 +57,14 @@ function buildList(lines: string[], emptyMessage: string) {
   return lines.length > 0 ? lines.join("\n") : `- ${emptyMessage}`;
 }
 
+function truncate(value: string, maxLength: number) {
+  if (value.length <= maxLength) {
+    return value;
+  }
+
+  return `${value.slice(0, maxLength - 1).trimEnd()}…`;
+}
+
 export function buildSlackBlocks(data: DigestData): SlackWebhookPayload {
   const calendarLines = data.calendar.map(
     (event) =>
@@ -68,7 +76,10 @@ export function buildSlackBlocks(data: DigestData): SlackWebhookPayload {
   );
   const fathomLines = data.fathom.map(
     (meeting) =>
-      `- ${meeting.meetingTitle} | ${formatDate(meeting.meetingDate)} | ${meeting.summary} | action items: ${meeting.actionItems.join("; ")}`,
+      `- ${meeting.meetingTitle} | ${formatDate(meeting.meetingDate)} | ${truncate(meeting.summary, 145)} | actions: ${truncate(
+        meeting.actionItems.slice(0, 2).join("; "),
+        145,
+      )}${meeting.actionItems.length > 2 ? "; +" + (meeting.actionItems.length - 2) + " more" : ""}`,
   );
   const harvestLines = data.harvest.map(
     (item) =>

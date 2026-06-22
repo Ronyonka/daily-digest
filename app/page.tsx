@@ -68,11 +68,13 @@ export default function Home() {
         </header>
 
         <section className="mt-12 grid gap-6 xl:grid-cols-2">
-          <FathomCard meetings={digest.fathom} />
           <CalendarCard events={digest.calendar} />
           <EmailCard emails={digest.email} />
           <HarvestCard projects={digest.harvest} />
           <MattersCard matters={digest.matters} />
+          <div className="xl:col-span-2">
+            <FathomCard meetings={digest.fathom} />
+          </div>
         </section>
       </div>
     </main>

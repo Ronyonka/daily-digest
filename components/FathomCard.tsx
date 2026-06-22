@@ -30,19 +30,15 @@ export function FathomCard({ meetings }: { meetings: FathomMeeting[] }) {
               key={meeting.id}
               className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4"
             >
-              <div className="flex flex-wrap items-start justify-between gap-3">
-                <div>
-                  <p className="text-base font-semibold text-slate-950">
-                    {meeting.meetingTitle}
-                  </p>
-                  <p className="mt-1 text-sm text-slate-600">
-                    {formatMeetingDate(meeting.meetingDate)}
-                  </p>
-                </div>
-                <p className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
-                  {meeting.attendees.length} attendees
-                </p>
-              </div>
+              <p className="text-base font-semibold text-slate-950">
+                {meeting.meetingTitle}
+              </p>
+              <p className="mt-1 text-sm text-slate-600">
+                {formatMeetingDate(meeting.meetingDate)}
+              </p>
+              <p className="mt-2 text-xs font-medium uppercase tracking-[0.18em] text-slate-500">
+                {meeting.attendees.length} attendees
+              </p>
 
               <div className="mt-4 space-y-3">
                 <div>

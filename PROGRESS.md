@@ -111,6 +111,9 @@ anything else.**
 
 - [x] Added a new `data/fathom.json` mock section with realistic AI meeting notes/action items from yesterday, plus a matching Zod schema in `lib/schemas.ts`
 - [x] Wired Fathom into the shared digest aggregator, added a new `FathomCard` on the dashboard, and surfaced Fathom in the Slack digest payload
+- [x] Repositioned the Fathom card to the bottom of the dashboard and kept its internal layout as one vertical block
+- [x] Made the Fathom card span the full width below the two-column grid of the other cards
+- [x] Tightened the Fathom Slack block text to fit Slack's section limits and verified `/api/digest` posts successfully with the Fathom section included
 
 ### In Progress
 
