@@ -139,3 +139,6 @@ anything else.**
 - Dashboard is live on Vercel at `https://daily-digest-tan.vercel.app`
 - Project is complete; no further build work is planned unless Mark requests
   changes.
+- Final review pass completed: no `console.log` or `TODO` leftovers were found,
+  the README count mismatch was corrected, and the repo is in its finished
+  state.

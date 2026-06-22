@@ -86,7 +86,7 @@ manual setup steps.
 
 This proof of concept is complete:
 
-- The dashboard renders all four mocked sections
+- The dashboard renders all five mocked sections
 - Fathom appears as a first-class dashboard card for yesterday's calls
 - The shared aggregator powers both the UI and the Slack digest route
 - The Slack digest can be triggered manually and via cron
