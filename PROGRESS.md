@@ -19,32 +19,24 @@ anything else.**
 - [x] Defined Zod schemas for all four data shapes in `lib/schemas.ts`
 - [x] Built `lib/aggregator.ts` shared aggregation function that loads and
       validates the mock JSON server-side
+- [x] Built the four dashboard card components in `components/` and wired them
+      to the shared aggregator from `app/page.tsx`
+- [x] Deployed the dashboard to Vercel and confirmed the live URL renders the
+      real mock data snapshot correctly: `https://daily-digest-tan.vercel.app`
+- [x] Wrote `README.md` with real-vs-mocked honesty notes, run instructions, and
+      the live demo URL
 
 ### In Progress
 
-- [ ] GitHub repo creation, push, and Vercel deploy are blocked pending manual auth/tooling access
+- [ ] None
 
 ### Next (do these in order)
 
-- [ ] Create GitHub repo, push the scaffold, and connect it to Vercel
-- [ ] Deploy the blank scaffold and confirm the hosted URL works
-- [ ] Create `data/calendar.json`, `data/email.json`, `data/harvest.json`,
-      `data/matters.json` with realistic mock data (see `PRD.md` Sections section
-      for what each should contain)
-- [ ] Define Zod schemas for all four data shapes (`SKILLS.md` section 4)
-- [ ] Build `lib/aggregator.ts` shared aggregation function (`SKILLS.md` section 5)
-- [ ] Build the four card components (`SKILLS.md` section 10)
-- [ ] Build `app/page.tsx` to render all four cards with real mock data flowing
-      through the aggregator
-- [ ] Deploy Day 1 progress to Vercel, confirm the live dashboard renders correctly
+- [ ] Day 1 is complete. Continue with Day 2 work from the Day 2 section next session.
 
 ### Questions/Flags
 
-- `gh` and `vercel` are not installed in this environment, so the GitHub/Vercel
-  login and deploy steps need manual completion or the relevant tooling must be
-  made available.
-- Typechecking could not be verified here because dependencies are not installed
-  in this workspace, and `npx tsc --noEmit` attempted a network lookup.
+- None currently.
 
 ---
 
@@ -71,8 +63,6 @@ anything else.**
 - [ ] Test the digest route manually (visit `/api/digest` or curl it), confirm
       message lands correctly formatted in Slack
 - [ ] Polish: loading states, empty states, consistent spacing/header styling
-- [ ] Write README.md: clearly state what's real vs mocked (see `INSTRUCTIONS.md`
-      "Honesty checkpoints")
 - [ ] Final review pass: read through all generated code, fix anything sloppy,
       remove leftover TODOs/console.logs
 
@@ -85,3 +75,4 @@ anything else.**
 ## Notes for next session (free-form, update this each time)
 
 - (nothing yet, this is the initial state of the file)
+- Dashboard is live on Vercel at `https://daily-digest-tan.vercel.app`
