@@ -142,3 +142,5 @@ anything else.**
 - Final review pass completed: no `console.log` or `TODO` leftovers were found,
   the README count mismatch was corrected, and the repo is in its finished
   state.
+- Vercel Analytics has now been mounted at the root layout so page views can
+  be tracked in the deployed app.
