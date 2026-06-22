@@ -1,29 +1,38 @@
 [
   {
     "id": "harvest-1",
-    "projectName": "Atlas acquisition support",
-    "clientName": "Atlas Holdings",
-    "hoursLogged": 28.4,
-    "budgetedHours": 32,
-    "deadline": "2026-06-26",
-    "status": "On track"
+    "projectName": "Northstar Seed financing",
+    "clientName": "Northstar Labs",
+    "hoursLogged": 19.6,
+    "budgetedHours": 24,
+    "deadline": "2026-06-24",
+    "status": "On track for signing"
   },
   {
     "id": "harvest-2",
-    "projectName": "Ortega dispute resolution",
-    "clientName": "Ortega Family Office",
-    "hoursLogged": 41.5,
-    "budgetedHours": 38,
-    "deadline": "2026-06-24",
-    "status": "Over budget"
+    "projectName": "BrightMesh DPA and security review",
+    "clientName": "BrightMesh",
+    "hoursLogged": 14.25,
+    "budgetedHours": 18,
+    "deadline": "2026-06-25",
+    "status": "Awaiting client comments"
   },
   {
     "id": "harvest-3",
-    "projectName": "Lease review retainers",
-    "clientName": "Summit Retail Group",
-    "hoursLogged": 12.25,
-    "budgetedHours": 20,
-    "deadline": "2026-06-30",
+    "projectName": "Lighthouse Commerce employment pack",
+    "clientName": "Lighthouse Commerce",
+    "hoursLogged": 9.75,
+    "budgetedHours": 12,
+    "deadline": "2026-06-23",
+    "status": "Near completion"
+  },
+  {
+    "id": "harvest-4",
+    "projectName": "Nexa trademark clearance sprint",
+    "clientName": "Nexa Health",
+    "hoursLogged": 6.5,
+    "budgetedHours": 10,
+    "deadline": "2026-06-26",
     "status": "Room remaining"
   }
 ]

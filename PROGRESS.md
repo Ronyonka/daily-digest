@@ -48,6 +48,10 @@ anything else.**
 - [x] Built `lib/slack-client.ts` `postToSlack` function (`SKILLS.md` section 7)
 - [x] Built `app/api/digest/route.ts` tying aggregator + formatter + Slack post
       together (`SKILLS.md` section 2)
+- [x] Added `vercel.json` cron config for `/api/digest` (`SKILLS.md` section 9)
+- [x] Added the real `SLACK_WEBHOOK_URL` to local `.env.local` and Vercel
+- [x] Tested `/api/digest` locally against the real Slack webhook and confirmed
+      Slack accepted the formatted Block Kit payload
 
 ### In Progress
 
@@ -55,12 +59,6 @@ anything else.**
 
 ### Next
 
-- [ ] Manually create Slack workspace + webhook (`SKILLS.md` section 8 — this is a
-      manual step for the human, not the agent)
-- [ ] Add `SLACK_WEBHOOK_URL` to Vercel project env vars (not just local `.env.local`)
-- [ ] Add `vercel.json` cron config (`SKILLS.md` section 9)
-- [ ] Test the digest route manually (visit `/api/digest` or curl it), confirm
-      message lands correctly formatted in Slack
 - [ ] Polish: loading states, empty states, consistent spacing/header styling
 - [ ] Final review pass: read through all generated code, fix anything sloppy,
       remove leftover TODOs/console.logs
@@ -69,8 +67,37 @@ anything else.**
 
 - Slack workspace and incoming webhook creation are manual human steps; I left
   `SLACK_WEBHOOK_URL=` as a placeholder in `.env.local` until that is done.
+- `/api/digest` was manually exercised locally and returned success after posting
+  the structured digest payload to Slack.
 
 ---
+
+## Day 2.5 — Realism & Demo Polish
+
+### Done
+
+- [x] Rewrote all four mock data files to read like a believable startup and
+      scale-up legal practice snapshot, with more specific clients, matters,
+      attendees, senders, deadlines, and time usage
+- [x] Rewrote the homepage intro so it reads like a simple product screen for a
+      lawyer, without backend or Slack/aggregator language
+- [x] Added a static logged-in header treatment with a placeholder user identity
+      for demo polish
+- [x] Added a demo-only `Send test digest` button on the dashboard that calls
+      `/api/digest` client-side and surfaces success/error feedback
+
+### In Progress
+
+- [ ] None
+
+### Next
+
+- [ ] Final polish/README pass
+
+### Questions/Flags
+
+- The test digest button is an intentional demo addition outside the original
+  PRD scope and is now called out here for honesty.
 
 ## Notes for next session (free-form, update this each time)
 

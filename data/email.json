@@ -1,29 +1,38 @@
 [
   {
     "id": "mail-1",
-    "subject": "Revised signature page for Atlas settlement",
-    "sender": "Maya Johnson <maya.johnson@atlasco.com>",
-    "snippet": "We reviewed the latest draft and have one final signature page comment before sending it back.",
+    "subject": "Final cap table confirmation for Northstar Seed round",
+    "sender": "Tariq El-Sayed <tariq@northstarlabs.io>",
+    "snippet": "We reconciled the last investor allocation issue and can confirm the signature packet is ready for circulation.",
     "urgency": "high",
-    "receivedAt": "2026-06-22T07:48:00+03:00",
+    "receivedAt": "2026-06-22T07:32:00+03:00",
     "isFlagged": true
   },
   {
     "id": "mail-2",
-    "subject": "Conflicting hearing dates for the Ortega matter",
-    "sender": "Court clerk <clerk@judiciary.example>",
-    "snippet": "The calendar shows two possible slots; please confirm which date should remain on the docket.",
+    "subject": "Employment offer letter wording for new COO",
+    "sender": "Rachel Stein <rachel.stein@lighthousecommerce.com>",
+    "snippet": "Can you confirm the non-compete and bonus language before we send the revised offer this afternoon?",
     "urgency": "medium",
-    "receivedAt": "2026-06-22T08:21:00+03:00",
+    "receivedAt": "2026-06-22T08:17:00+03:00",
     "isFlagged": true
   },
   {
     "id": "mail-3",
-    "subject": "Invoice approval for May advisory work",
-    "sender": "Finance team <billing@northstarlegal.com>",
-    "snippet": "Please review the attached invoice summary and confirm approval for release today.",
+    "subject": "Supplier MSA comments from procurement",
+    "sender": "Giulia Romano <giulia.romano@brightmesh.co>",
+    "snippet": "We’ve marked up the liability cap and data security clauses; happy to send a cleaner version once you review.",
     "urgency": "low",
-    "receivedAt": "2026-06-21T16:40:00+03:00",
+    "receivedAt": "2026-06-22T09:05:00+03:00",
     "isFlagged": false
+  },
+  {
+    "id": "mail-4",
+    "subject": "Quick trademark search question",
+    "sender": "Alyssa Morgan <alyssa.morgan@nexhealth.co>",
+    "snippet": "We’d like a short readout on whether the new product name creates any obvious clearance issues.",
+    "urgency": "medium",
+    "receivedAt": "2026-06-22T10:02:00+03:00",
+    "isFlagged": true
   }
 ]

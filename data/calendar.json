@@ -1,37 +1,52 @@
 [
   {
     "id": "cal-1",
-    "title": "Client strategy sync",
-    "startTime": "2026-06-22T09:00:00+03:00",
-    "endTime": "2026-06-22T09:30:00+03:00",
+    "title": "Series A closing checklist",
+    "startTime": "2026-06-22T08:45:00+03:00",
+    "endTime": "2026-06-22T09:15:00+03:00",
     "attendees": [
-      "Amina Patel",
-      "James Osei",
-      "Client team"
+      "Leila Hassan",
+      "Mara Okafor",
+      "Oliver Grant",
+      "Nexus Health leadership"
     ],
     "location": "Microsoft Teams"
   },
   {
     "id": "cal-2",
-    "title": "Court filing prep review",
-    "startTime": "2026-06-22T11:00:00+03:00",
-    "endTime": "2026-06-22T12:00:00+03:00",
+    "title": "Employment handbook redline review",
+    "startTime": "2026-06-22T10:30:00+03:00",
+    "endTime": "2026-06-22T11:15:00+03:00",
     "attendees": [
-      "Nadia Kim",
-      "Paralegal desk"
+      "Priya Desai",
+      "Noah Bennett",
+      "Hana Watanabe"
     ],
     "location": "Conference Room B"
   },
   {
     "id": "cal-3",
-    "title": "Commercial lease negotiation call",
-    "startTime": "2026-06-22T14:15:00+03:00",
-    "endTime": "2026-06-22T15:00:00+03:00",
+    "title": "Data processing addendum call",
+    "startTime": "2026-06-22T13:45:00+03:00",
+    "endTime": "2026-06-22T14:30:00+03:00",
     "attendees": [
-      "David Mensah",
-      "Broker representative",
-      "Client counsel"
+      "Sophie Laurent",
+      "Ethan Cole",
+      "Camila Vieira",
+      "BrightMesh procurement"
     ],
     "location": "Zoom"
+  },
+  {
+    "id": "cal-4",
+    "title": "Trademark clearance check-in",
+    "startTime": "2026-06-22T16:00:00+03:00",
+    "endTime": "2026-06-22T16:30:00+03:00",
+    "attendees": [
+      "Daniel Mwangi",
+      "Isabella Rossi",
+      "Northstar Labs product team"
+    ],
+    "location": "Google Meet"
   }
 ]

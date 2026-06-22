@@ -1,26 +1,34 @@
 [
   {
     "id": "matter-1",
-    "matterName": "Atlas settlement package",
-    "clientName": "Atlas Holdings",
+    "matterName": "Northstar Labs Series A",
+    "clientName": "Northstar Labs",
     "status": "Awaiting client signature",
     "deadline": "2026-06-23",
-    "nextAction": "Send final signature packet after redlines are reconciled"
+    "nextAction": "Send the final disclosure schedule and circulate the signature package"
   },
   {
     "id": "matter-2",
-    "matterName": "Ortega emergency motion",
-    "clientName": "Ortega Family Office",
-    "status": "Filing due Friday",
-    "deadline": "2026-06-26",
-    "nextAction": "Confirm exhibits and file proof of service"
+    "matterName": "BrightMesh DPA refresh",
+    "clientName": "BrightMesh",
+    "status": "Client comments pending",
+    "deadline": "2026-06-25",
+    "nextAction": "Incorporate procurement edits and resolve the security exhibit wording"
   },
   {
     "id": "matter-3",
-    "matterName": "Summit lease follow-up",
-    "clientName": "Summit Retail Group",
-    "status": "Blocked on third party",
-    "deadline": "2026-06-27",
-    "nextAction": "Waiting on landlord markup before final review"
+    "matterName": "Lighthouse Commerce executive hire",
+    "clientName": "Lighthouse Commerce",
+    "status": "Offer out for signature",
+    "deadline": "2026-06-24",
+    "nextAction": "Track the signed offer letter and prepare onboarding documents"
+  },
+  {
+    "id": "matter-4",
+    "matterName": "Nexa Health trademark clearance",
+    "clientName": "Nexa Health",
+    "status": "Initial search complete",
+    "deadline": "2026-06-26",
+    "nextAction": "Review knockout conflicts and confirm whether to proceed with filing"
   }
 ]
