@@ -103,6 +103,29 @@ anything else.**
 - The test digest button is an intentional demo addition outside the original
   PRD scope and is now called out here for honesty.
 
+---
+
+## Day 3 — Refinement Based on Follow-Up Context
+
+### Done
+
+- [x] Added a new `data/fathom.json` mock section with realistic AI meeting notes/action items from yesterday, plus a matching Zod schema in `lib/schemas.ts`
+- [x] Wired Fathom into the shared digest aggregator, added a new `FathomCard` on the dashboard, and surfaced Fathom in the Slack digest payload
+
+### In Progress
+
+- [ ] None
+
+### Next (do these in order)
+
+- [ ] Reframe/caveat the Matters section honestly in the README
+- [ ] Note the "single morning digest vs throughout-the-day updates" gap as a known limitation to be addressed in a later phase, not silently ignored
+
+### Questions/Flags
+
+- The follow-up stakeholder context makes it clear that Fathom should be represented explicitly and that the existing Client/Matter section should be described carefully as speculative unless a real upstream system is confirmed.
+- Fathom now shows up in both the dashboard and the Slack digest; the remaining Day 3 follow-up work is still the README honesty pass.
+
 ## Notes for next session (free-form, update this each time)
 
 - Verified the Slack formatter, webhook client, and `/api/digest` route with

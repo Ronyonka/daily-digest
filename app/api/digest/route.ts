@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { getDigestData } from "@/lib/aggregator";
+import { getTodaysDigest } from "@/lib/aggregator";
 import { postToSlack } from "@/lib/slack-client";
 import { buildSlackBlocks } from "@/lib/slack-formatter";
 
@@ -9,7 +9,7 @@ export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    const digest = getDigestData();
+    const digest = getTodaysDigest();
     const payload = buildSlackBlocks(digest);
 
     await postToSlack(payload);
@@ -20,6 +20,7 @@ export async function GET() {
       counts: {
         calendar: digest.calendar.length,
         email: digest.email.length,
+        fathom: digest.fathom.length,
         harvest: digest.harvest.length,
         matters: digest.matters.length,
       },

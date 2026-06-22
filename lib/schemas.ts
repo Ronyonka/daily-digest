@@ -45,3 +45,14 @@ export const MatterItemSchema = z.object({
 });
 
 export type MatterItem = z.infer<typeof MatterItemSchema>;
+
+export const FathomMeetingSchema = z.object({
+  id: z.string(),
+  meetingTitle: z.string(),
+  meetingDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  attendees: z.array(z.string()).min(1),
+  summary: z.string(),
+  actionItems: z.array(z.string()).min(1),
+});
+
+export type FathomMeeting = z.infer<typeof FathomMeetingSchema>;

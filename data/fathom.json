@@ -1,0 +1,77 @@
+[
+  {
+    "id": "fathom-1",
+    "meetingTitle": "Northstar Series A signing blocker triage",
+    "meetingDate": "2026-06-21",
+    "attendees": [
+      "Leila Hassan",
+      "Mara Okafor",
+      "Oliver Grant",
+      "Tariq El-Sayed",
+      "Northstar Labs finance team"
+    ],
+    "summary": "The group walked through the final open items on the Series A signing package and confirmed the last investor side letter issue is limited to the MFN carveout. The client wants the disclosure schedule tightened before circulation, but there were no new commercial objections. Everyone agreed the transaction can stay on track if the redlines go out first thing Monday.",
+    "actionItems": [
+      "Revise the disclosure schedule to reflect the updated employee option pool numbers.",
+      "Send a clean signature packet with the side letter and board consent attachments.",
+      "Confirm whether the lead investor wants the MFN carveout language mirrored in the closing set.",
+      "Ask finance to circulate the final wire instructions once signatures are complete."
+    ]
+  },
+  {
+    "id": "fathom-2",
+    "meetingTitle": "BrightMesh DPA and security exhibit review",
+    "meetingDate": "2026-06-21",
+    "attendees": [
+      "Sophie Laurent",
+      "Ethan Cole",
+      "Camila Vieira",
+      "Giulia Romano",
+      "BrightMesh procurement"
+    ],
+    "summary": "Procurement spent most of the call on liability cap alignment and whether the security exhibit should track the customer template or the vendor's standard addendum. The parties landed on a workable compromise around breach notice timing and subprocessor notice. The tone was constructive, with only one remaining issue on audit rights.",
+    "actionItems": [
+      "Redraft the liability cap to match the commercial MSA and preserve the data security carveout.",
+      "Incorporate the updated breach notice and incident response timing language.",
+      "Send a marked-up security exhibit with the subprocessor notice compromise.",
+      "Follow up on the audit rights language once procurement confirms the internal policy review."
+    ]
+  },
+  {
+    "id": "fathom-3",
+    "meetingTitle": "Lighthouse Commerce COO offer and restrictive covenants",
+    "meetingDate": "2026-06-21",
+    "attendees": [
+      "Priya Desai",
+      "Noah Bennett",
+      "Hana Watanabe",
+      "Rachel Stein",
+      "Lighthouse Commerce HR"
+    ],
+    "summary": "The team reviewed the revised COO offer letter and focused on the non-compete fallback, bonus eligibility, and what happens if the candidate resigns before the vesting start date. HR was comfortable with the compensation package, but they wanted the termination language softened so it reads more like a market-standard executive agreement. The group left aligned on moving quickly once legal sends the updated draft.",
+    "actionItems": [
+      "Rework the non-compete and non-solicit section to match the executive role level.",
+      "Add a clearer bonus proration clause tied to the first 12 months of service.",
+      "Tighten the start-date and vesting commencement language in the offer letter.",
+      "Send the revised packet to HR for same-day approval."
+    ]
+  },
+  {
+    "id": "fathom-4",
+    "meetingTitle": "Nexa trademark knockout and filing strategy",
+    "meetingDate": "2026-06-21",
+    "attendees": [
+      "Daniel Mwangi",
+      "Isabella Rossi",
+      "Alyssa Morgan",
+      "Northstar Labs product team"
+    ],
+    "summary": "The discussion focused on whether the proposed product name clears the obvious knockout search results and if the client should keep the current naming lane or prepare a backup. The team agreed there is no immediate refusal risk, but the branding team should avoid committing to packaging until a fuller search is complete. The call ended with a practical plan to file quickly if the second-pass search stays clean.",
+    "actionItems": [
+      "Run the expanded clearance search on the top two backup names.",
+      "Prepare a short risk memo for the product team before Thursday's brand review.",
+      "Hold off on filing until the full search report is confirmed clean.",
+      "Draft the domestic filing instructions so they are ready if the client approves."
+    ]
+  }
+]

@@ -1,9 +1,10 @@
+import { FathomCard } from "@/components/FathomCard";
 import { CalendarCard } from "@/components/CalendarCard";
 import { EmailCard } from "@/components/EmailCard";
 import { HarvestCard } from "@/components/HarvestCard";
 import { MattersCard } from "@/components/MattersCard";
 import { SendTestDigestButton } from "@/components/SendTestDigestButton";
-import { getDigestData } from "@/lib/aggregator";
+import { getTodaysDigest } from "@/lib/aggregator";
 
 function formatDashboardDate(date: Date) {
   return new Intl.DateTimeFormat("en-US", {
@@ -16,7 +17,7 @@ function formatDashboardDate(date: Date) {
 }
 
 export default function Home() {
-  const digest = getDigestData();
+  const digest = getTodaysDigest();
   const referenceStart = digest.calendar[0]?.startTime ?? new Date().toISOString();
   const dayLabel = formatDashboardDate(new Date(referenceStart));
 
@@ -67,6 +68,7 @@ export default function Home() {
         </header>
 
         <section className="mt-12 grid gap-6 xl:grid-cols-2">
+          <FathomCard meetings={digest.fathom} />
           <CalendarCard events={digest.calendar} />
           <EmailCard emails={digest.email} />
           <HarvestCard projects={digest.harvest} />

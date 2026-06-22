@@ -1,8 +1,9 @@
 # Lawyer Daily Digest
 
 A Next.js proof of concept for a law-firm daily digest. It combines mocked
-calendar, email, Harvest, and client/matter data into a hosted dashboard and a
-Slack digest delivered through the same server-side aggregation pipeline.
+calendar, email, Fathom meeting notes, Harvest, and client/matter data into a
+hosted dashboard and a Slack digest delivered through the same server-side
+aggregation pipeline.
 
 Live demo: https://daily-digest-tan.vercel.app
 
@@ -10,6 +11,7 @@ Live demo: https://daily-digest-tan.vercel.app
 
 - One shared snapshot can power both a dashboard and a Slack summary
 - Mocked legal-work data can still feel like a believable morning brief
+- Yesterday's call summaries can be surfaced alongside today's action items
 - The dashboard is shareable as a hosted link
 - Slack delivery can be triggered manually or by Vercel Cron
 
@@ -30,6 +32,7 @@ Mocked:
 
 - Calendar data
 - Email data
+- Fathom meeting summaries and action items
 - Harvest data
 - Client / matter status data
 - Any live Microsoft Graph, Harvest, or practice-management integration
@@ -80,6 +83,7 @@ manual setup steps.
 This proof of concept is complete:
 
 - The dashboard renders all four mocked sections
+- Fathom appears as a first-class dashboard card for yesterday's calls
 - The shared aggregator powers both the UI and the Slack digest route
 - The Slack digest can be triggered manually and via cron
 - The dashboard is deployed to Vercel
@@ -89,6 +93,8 @@ This proof of concept is complete:
 
 - The dashboard is meant to be forwardable as a demo, not treated as a live
   production app.
+- Fathom is mocked on purpose, but the card is shaped to feel like a real
+  morning handoff from yesterday's meetings.
 - The client/matter section is the most speculative part of the concept and is
   clearly mocked here on purpose.
 - If you want to adapt this into a real product, the next step would be wiring

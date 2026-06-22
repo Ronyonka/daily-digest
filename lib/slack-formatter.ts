@@ -66,6 +66,10 @@ export function buildSlackBlocks(data: DigestData): SlackWebhookPayload {
     (item) =>
       `- ${item.urgency.toUpperCase()} | ${item.subject} from ${item.sender} ${item.isFlagged ? "[flagged]" : ""}`.trimEnd(),
   );
+  const fathomLines = data.fathom.map(
+    (meeting) =>
+      `- ${meeting.meetingTitle} | ${formatDate(meeting.meetingDate)} | ${meeting.summary} | action items: ${meeting.actionItems.join("; ")}`,
+  );
   const harvestLines = data.harvest.map(
     (item) =>
       `- ${item.projectName} for ${item.clientName} | ${formatMoneyHours(item.hoursLogged)} / ${formatMoneyHours(item.budgetedHours)} hrs | ${item.status} | due ${formatDate(item.deadline)}`,
@@ -75,7 +79,7 @@ export function buildSlackBlocks(data: DigestData): SlackWebhookPayload {
       `- ${item.matterName} for ${item.clientName} | ${item.status} | due ${formatDate(item.deadline)} | next: ${item.nextAction}`,
   );
 
-  const text = `Daily digest: ${data.calendar.length} calendar events, ${data.email.length} emails, ${data.harvest.length} Harvest items, and ${data.matters.length} matters.`;
+  const text = `Daily digest: ${data.calendar.length} calendar events, ${data.email.length} emails, ${data.fathom.length} Fathom meetings, ${data.harvest.length} Harvest items, and ${data.matters.length} matters.`;
 
   return {
     text,
@@ -111,6 +115,13 @@ export function buildSlackBlocks(data: DigestData): SlackWebhookPayload {
         text: {
           type: "mrkdwn",
           text: `*Email*\n${buildList(emailLines, "No new email items.")}`,
+        },
+      },
+      {
+        type: "section",
+        text: {
+          type: "mrkdwn",
+          text: `*Fathom*\n${buildList(fathomLines, "No call notes from yesterday.")}`,
         },
       },
       {

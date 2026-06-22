@@ -6,6 +6,23 @@ Interview scenario with Mark: lawyers waste time hunting across multiple tabs (c
 
 This version is scoped for a **2-day build**, hosted, forwardable, with room to extend.
 
+## Day 3 — Refinement Based on Follow-Up Context
+
+Follow-up conversation with the actual stakeholder clarified the real internal stack and the product shape we should be honest about going forward:
+
+- **Harvest** is the time-tracking, client records, billing, and invoicing system. This is already represented in the build and should remain a first-class mocked source.
+- **Fathom** is the AI meeting notetaker. It produces meeting notes, summaries, and action items from calls, and it is not currently represented anywhere in the build. The next version should add a mock Fathom section rather than pretending those outputs already exist elsewhere.
+- **Jarvis** is their internal AI inference platform. This is infrastructure, not a dashboard data source, so it should not get its own section. It is worth mentioning in the README as something a real version would integrate with rather than duplicate.
+- **Microsoft 365** covers calendar, contacts, and email, and is already represented.
+- **Slack** is the current delivery surface for internal comms, and is already represented.
+
+Two important scope corrections came out of the follow-up:
+
+- The team wants updates **throughout the day**, not just a single morning digest. The current build is a one-shot morning cron job, which is a real architectural gap relative to what they actually want.
+- They did **not** mention any standalone client/matter-tracking tool. The existing "Client/Matter Status" section in this build may not map to a real system they have, so we should be upfront that it is speculative rather than quietly presenting it as factual.
+
+This Day 3 context does not expand the code scope in this session, but it does change how we should describe the product and what we should plan next.
+
 ## Goal
 
 Prove, in a working hosted app, that:
