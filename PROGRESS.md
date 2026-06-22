@@ -44,7 +44,10 @@ anything else.**
 
 ### Done
 
-- [ ] (not started)
+- [x] Built `lib/slack-formatter.ts` (`SKILLS.md` section 6)
+- [x] Built `lib/slack-client.ts` `postToSlack` function (`SKILLS.md` section 7)
+- [x] Built `app/api/digest/route.ts` tying aggregator + formatter + Slack post
+      together (`SKILLS.md` section 2)
 
 ### In Progress
 
@@ -52,10 +55,6 @@ anything else.**
 
 ### Next
 
-- [ ] Build `lib/slack-formatter.ts` (`SKILLS.md` section 6)
-- [ ] Build `lib/slack-client.ts` postToSlack function (`SKILLS.md` section 7)
-- [ ] Build `app/api/digest/route.ts` tying aggregator + formatter + Slack post
-      together (`SKILLS.md` section 2)
 - [ ] Manually create Slack workspace + webhook (`SKILLS.md` section 8 — this is a
       manual step for the human, not the agent)
 - [ ] Add `SLACK_WEBHOOK_URL` to Vercel project env vars (not just local `.env.local`)
@@ -68,11 +67,13 @@ anything else.**
 
 ### Questions/Flags
 
-- (none yet)
+- Slack workspace and incoming webhook creation are manual human steps; I left
+  `SLACK_WEBHOOK_URL=` as a placeholder in `.env.local` until that is done.
 
 ---
 
 ## Notes for next session (free-form, update this each time)
 
-- (nothing yet, this is the initial state of the file)
+- Verified the Slack formatter, webhook client, and `/api/digest` route with
+  `npm run lint` and `npm run build`.
 - Dashboard is live on Vercel at `https://daily-digest-tan.vercel.app`
