@@ -10,17 +10,24 @@ anything else.**
 
 ### Done
 
-- [ ] (nothing yet — this is the starting state)
+- [x] Scaffolded the Next.js App Router + Tailwind project structure in the repo root
+- [x] Added the four project markdown files to the repo root and committed them with the scaffold
+- [x] Verified `.env.local` is excluded by `.gitignore`
+- [x] Created a local git commit for the initial scaffold
+- [x] Created `data/calendar.json`, `data/email.json`, `data/harvest.json`,
+      `data/matters.json` with realistic mock data
+- [x] Defined Zod schemas for all four data shapes in `lib/schemas.ts`
+- [x] Built `lib/aggregator.ts` shared aggregation function that loads and
+      validates the mock JSON server-side
 
 ### In Progress
 
-- [ ] Nothing started
+- [ ] GitHub repo creation, push, and Vercel deploy are blocked pending manual auth/tooling access
 
 ### Next (do these in order)
 
-- [ ] Scaffold Next.js project per `SKILLS.md` section 1
-- [ ] Init git, confirm `.env.local` is gitignored, create GitHub repo, push
-- [ ] Connect repo to Vercel, deploy blank scaffold, confirm hosted URL works
+- [ ] Create GitHub repo, push the scaffold, and connect it to Vercel
+- [ ] Deploy the blank scaffold and confirm the hosted URL works
 - [ ] Create `data/calendar.json`, `data/email.json`, `data/harvest.json`,
       `data/matters.json` with realistic mock data (see `PRD.md` Sections section
       for what each should contain)
@@ -33,7 +40,11 @@ anything else.**
 
 ### Questions/Flags
 
-- (none yet)
+- `gh` and `vercel` are not installed in this environment, so the GitHub/Vercel
+  login and deploy steps need manual completion or the relevant tooling must be
+  made available.
+- Typechecking could not be verified here because dependencies are not installed
+  in this workspace, and `npx tsc --noEmit` attempted a network lookup.
 
 ---
 

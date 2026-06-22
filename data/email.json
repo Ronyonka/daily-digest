@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mail-1",
+    "subject": "Revised signature page for Atlas settlement",
+    "sender": "Maya Johnson <maya.johnson@atlasco.com>",
+    "snippet": "We reviewed the latest draft and have one final signature page comment before sending it back.",
+    "urgency": "high",
+    "receivedAt": "2026-06-22T07:48:00+03:00",
+    "isFlagged": true
+  },
+  {
+    "id": "mail-2",
+    "subject": "Conflicting hearing dates for the Ortega matter",
+    "sender": "Court clerk <clerk@judiciary.example>",
+    "snippet": "The calendar shows two possible slots; please confirm which date should remain on the docket.",
+    "urgency": "medium",
+    "receivedAt": "2026-06-22T08:21:00+03:00",
+    "isFlagged": true
+  },
+  {
+    "id": "mail-3",
+    "subject": "Invoice approval for May advisory work",
+    "sender": "Finance team <billing@northstarlegal.com>",
+    "snippet": "Please review the attached invoice summary and confirm approval for release today.",
+    "urgency": "low",
+    "receivedAt": "2026-06-21T16:40:00+03:00",
+    "isFlagged": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "matter-1",
+    "matterName": "Atlas settlement package",
+    "clientName": "Atlas Holdings",
+    "status": "Awaiting client signature",
+    "deadline": "2026-06-23",
+    "nextAction": "Send final signature packet after redlines are reconciled"
+  },
+  {
+    "id": "matter-2",
+    "matterName": "Ortega emergency motion",
+    "clientName": "Ortega Family Office",
+    "status": "Filing due Friday",
+    "deadline": "2026-06-26",
+    "nextAction": "Confirm exhibits and file proof of service"
+  },
+  {
+    "id": "matter-3",
+    "matterName": "Summit lease follow-up",
+    "clientName": "Summit Retail Group",
+    "status": "Blocked on third party",
+    "deadline": "2026-06-27",
+    "nextAction": "Waiting on landlord markup before final review"
+  }
+]
